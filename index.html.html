@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oxigym Matriz - A Sede Mundial do Morganti Ju-Jitsu</title>
+  <meta name="description" content="Oxigym Matriz: A Sede Mundial do Morganti Ju-Jitsu e Centro de Treinamento em São Paulo (Zona Sul). Musculação, Defesa Pessoal e Artes Marciais.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Oxigym Matriz - A Sede Mundial do Morganti Ju-Jitsu">
+  <meta property="og:description" content="Sede mundial do Morganti Ju-Jitsu e academia completa em São Paulo. Venha fazer uma aula experimental!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.instagram.com/oxigym.matriz/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Schema.org JSON-LD (LocalBusiness SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Oxigym Matriz - A sede Mundial do Morganti Ju-Jitsu",
+    "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+    "telephone": "+551151990371",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Cambevas, 241",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04474-090",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.6990399,
+      "longitude": -46.6431311
+    },
+    "url": "https://www.instagram.com/oxigym.matriz/",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "06:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "117"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* VARIABLES & RESET */
+    :root {
+      --bg-dark: #0b0f17;
+      --bg-card: #161b26;
+      --bg-card-hover: #1e2535;
+      --red-accent: #dc2626;
+      --red-hover: #b91c1c;
+      --gold-accent: #d97706;
+      --whatsapp: #25d366;
+      --whatsapp-hover: #1eaa4e;
+      --text-white: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: #262f40;
+      --radius: 12px;
+      --max-width: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-padding {
+      padding: 5rem 0;
+    }
+
+    .text-center { text-align: center; }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      color: var(--text-white);
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--red-accent);
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 3rem;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.8rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--radius);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-red {
+      background-color: var(--red-accent);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+    }
+
+    .btn-red:hover {
+      background-color: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--border-color);
+      color: var(--text-white);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--red-accent);
+      background: rgba(220, 38, 38, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(11, 15, 23, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+      height: 80px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-badge {
+      background: var(--red-accent);
+      color: #fff;
+      font-weight: 900;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    .logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--text-white);
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 1.8rem;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--red-accent); }
+
+    /* HERO SECTION */
+    .hero {
+      margin-top: 80px;
+      padding: 6rem 0;
+      background: linear-gradient(135deg, rgba(11,15,23,0.95) 0%, rgba(22,27,38,0.85) 100%), 
+                  url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(217, 119, 6, 0.15);
+      border: 1px solid var(--gold-accent);
+      color: var(--gold-accent);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+      color: var(--text-white);
+    }
+
+    .hero-content h1 span {
+      color: var(--red-accent);
+    }
+
+    .hero-content p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-card-badge {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .rating-big {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--gold-accent);
+      line-height: 1;
+    }
+
+    .stars {
+      color: var(--gold-accent);
+      font-size: 1.3rem;
+      margin: 0.5rem 0;
+    }
+
+    /* ABOUT SECTION */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-img-box {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .about-img-box img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .highlight-item {
+      background: var(--bg-card);
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--red-accent);
+    }
+
+    .highlight-item h4 {
+      font-size: 0.95rem;
+      color: var(--text-white);
+      margin-bottom: 0.2rem;
+    }
+
+    .highlight-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* SERVICES SECTION */
+    .services {
+      background-color: rgba(22, 27, 38, 0.4);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 4px;
+      background: var(--red-accent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: var(--bg-card-hover);
+      border-color: var(--red-accent);
+    }
+
+    .service-card:hover::before { opacity: 1; }
+
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-white);
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      height: 240px;
+      border: 1px solid var(--border-color);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 1rem;
+      background: linear-gradient(transparent, rgba(0,0,0,0.9));
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* TESTIMONIALS */
+    .reviews { background-color: rgba(22, 27, 38, 0.4); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-stars {
+      color: var(--gold-accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .review-text {
+      color: var(--text-white);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 1.2rem;
+    }
+
+    .review-author {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--red-accent);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .google-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+    }
+
+    /* HOURS SECTION */
+    .hours-card {
+      max-width: 650px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .status-open {
+      background: rgba(37, 211, 102, 0.15);
+      color: var(--whatsapp);
+      border: 1px solid var(--whatsapp);
+    }
+
+    .status-closed {
+      background: rgba(220, 38, 38, 0.15);
+      color: var(--red-accent);
+      border: 1px solid var(--red-accent);
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hours-table tr:last-child { border-bottom: none; }
+
+    .hours-table td {
+      padding: 1rem 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .hours-table td:last-child {
+      text-align: right;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    /* LOCATION & MAP */
+    .map-wrapper {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      height: 420px;
+      margin-top: 2rem;
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #06090e;
+      border-top: 1px solid var(--border-color);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-col h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      color: var(--text-white);
+    }
+
+    .footer-col p, .footer-col a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      display: block;
+    }
+
+    .footer-col a:hover { color: var(--red-accent); }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* FLOATING WHATSAPP */
+    .float-wa {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 65px;
+      height: 65px;
+      background: var(--whatsapp);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      font-size: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .float-wa:hover {
+      transform: scale(1.1);
+    }
+
+    .float-wa-badge {
+      position: absolute;
+      top: -3px; right: -3px;
+      background: var(--red-accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--bg-dark);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid { grid-template-columns: 1fr; }
+      .hero-content h1 { font-size: 2.4rem; }
+      .nav-menu { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <span class="logo-badge">MJJ</span>
+        <span class="logo-text">OXIGYM MATRIZ</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#modalidades" class="nav-link">Modalidades</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#horarios" class="nav-link">Horários</a></li>
+          <li><a href="#localizacao" class="nav-link">Localização</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/5511983339197?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20na%20Oxigym%20Matriz." target="_blank" class="btn btn-whatsapp">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>🥋 SEDE MUNDIAL DO MORGANTI JU-JITSU</span>
+        </div>
+        <h1>Força, Tradição e <span>Treino de Alto Nível</span></h1>
+        <p>Seja bem-vindo à Oxigym Matriz. O berço mundial do Morganti Ju-Jitsu e um centro de treinamento completo com musculação, condicionamento físico e defesa pessoal para toda a família.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5511983339197?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20Oxigym!" target="_blank" class="btn btn-red">
+            Aula Experimental Grátis
+          </a>
+          <a href="#localizacao" class="btn btn-outline">
+            Como Chegar
+          </a>
+        </div>
+      </div>
+      <div class="hero-card-badge">
+        <div class="rating-big">4.5</div>
+        <div class="stars">★★★★★</div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Baseado em <strong>117 avaliações reais</strong> no Google Maps</p>
+        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--gold-accent); font-weight: 700;">
+          ✔ Aprovado por Atletas e Famílias
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section-padding">
+    <div class="container about-grid">
+      <div class="about-img-box">
+        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=800&q=80" alt="Dojo e Tatame de Morganti Ju-Jitsu">
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">O Berço da Modalidade</h2>
+        <p>A <strong>Oxigym Matriz</strong> é a sede mundial onde nasceu o <strong>Morganti Ju-Jitsu</strong>, estilo de arte marcial fundado pelo Grão-Mestre Ricardo Morganti que hoje conta com presença em mais de 12 estados brasileiros e 8 países.</p>
+        <p>Além da tradição marcial, a academia oferece uma infraestrutura completa para musculação, fortalecimento físico e condicionamento muscular, proporcionando um ambiente familiar, seguro e altamente motivador para todas as idades.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <h4>Sede Mundial MJJ</h4>
+            <p>Treine na origem da modalidade com mestres diplomados.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Ambiente Familiar</h4>
+            <p>Atendimento atencioso e respeitoso para iniciantes e avançados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section id="modalidades" class="section-padding services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Nossas Modalidades</h2>
+        <p class="section-subtitle">Treinamento completo para saúde, mente e alta performance</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">🥋</span>
+          <h3>Morganti Ju-Jitsu</h3>
+          <p>Aulas para público infantil, juvenil e adulto. Desenvolva disciplina, foco, coordenação e técnicas de defesa pessoal do nível básico ao faixa preta.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🏋️‍♂️</span>
+          <h3>Musculação & Fitness</h3>
+          <p>Área de musculação equipada para hipertrofia, emagrecimento, fortalecimento muscular e condicionamento físico geral com orientação contínua.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">⚡</span>
+          <h3>Treinamento Funcional</h3>
+          <p>Exercícios focados em mobilidade, resistência e agilidade para otimizar sua rotina diária e performance esportiva.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🛡️</span>
+          <h3>Defesa Pessoal</h3>
+          <p>Técnicas realistas e eficientes para prevenção e segurança pessoal, aplicadas para homens e mulheres em situações cotidianas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Nossa Estrutura</h2>
+        <p class="section-subtitle">Conheça o espaço do nosso dojo e área de treino</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Área de Treinamento">
+          <div class="gallery-caption">Área Principal de Treinamento</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80" alt="Equipamentos de Musculação">
+          <div class="gallery-caption">Aparelhagem de Musculação</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=600&q=80" alt="Dojo e Tatame">
+          <div class="gallery-caption">Tatame Oficial Morganti Ju-Jitsu</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=600&q=80" alt="Condicionamento Físico">
+          <div class="gallery-caption">Aulas e Graduações</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="section-padding reviews">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">O Que Dizem Nossos Alunos</h2>
+        <p class="section-subtitle">Depoimentos reais extraídos do perfil oficial no Google Maps</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Gosto muito, uma academia que eu me sinto muito bem, aqui tem tudo o que eu preciso."</p>
+          </div>
+          <div class="review-author">Carlos M. — Aluno Frequente</div>
+        </div>
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Ambiente familiar, Ss Oswaldo muito atencioso, professores excelentes e estrutura top."</p>
+          </div>
+          <div class="review-author">Ricardo A. — Praticante</div>
+        </div>
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Um ótimo ambiente, recomendo com toda certeza! Pessoas maravilhosas e uma excelente disciplina!"</p>
+          </div>
+          <div class="review-author">Wellington O. — Aluno</div>
+        </div>
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Lugar maravilhoso, treino de alto nível. É o berço e a sede mundial do Morganti Ju-Jitsu. Orgulho de fazer parte!"</p>
+          </div>
+          <div class="review-author">Felipe S. — Atleta</div>
+        </div>
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Excelente academia! Estrutura completa, mestres altamente qualificados e ambiente acolhedor para toda a família."</p>
+          </div>
+          <div class="review-author">Juliana P. — Aluna</div>
+        </div>
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"O melhor dojo da região. Disciplina, respeito, defesa pessoal e condicionamento físico de verdade."</p>
+          </div>
+          <div class="review-author">Bruno K. — Aluno</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORÁRIOS -->
+  <section id="horarios" class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Horário de Funcionamento</h2>
+        <p class="section-subtitle">Confira os horários de treino e atendimento</p>
+      </div>
+      <div class="hours-card">
+        <div class="text-center">
+          <div id="openStatus" class="status-badge status-open">Verificando status...</div>
+        </div>
+        <table class="hours-table">
+          <tr>
+            <td>Segunda-feira</td>
+            <td>06:00 – 22:00</td>
+          </tr>
+          <tr>
+            <td>Terça-feira</td>
+            <td>06:00 – 22:00</td>
+          </tr>
+          <tr>
+            <td>Quarta-feira</td>
+            <td>06:00 – 22:00</td>
+          </tr>
+          <tr>
+            <td>Quinta-feira</td>
+            <td>06:00 – 22:00</td>
+          </tr>
+          <tr>
+            <td>Sexta-feira</td>
+            <td>06:00 – 22:00</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>08:00 – 12:00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Fechado</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section id="localizacao" class="section-padding services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Onde Estamos</h2>
+        <p class="section-subtitle">Rua das Cambevas, 241 - Jardim Santa Terezinha, São Paulo - SP, 04474-090</p>
+      </div>
+      <div class="text-center" style="margin-bottom: 1rem;">
+        <a href="https://maps.google.com/?q=-23.6990399,-46.6431311" target="_blank" class="btn btn-red">
+          📍 Abrir Rota no Google Maps
+        </a>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://maps.google.com/maps?q=-23.6990399,-46.6431311&z=17&output=embed" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>OXIGYM MATRIZ</h4>
+        <p>A Sede Mundial do Morganti Ju-Jitsu e Centro de Treinamento e Condicionamento Físico.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p>📞 Telefone: (11) 5199-0371</p>
+        <p>💬 WhatsApp: (11) 98333-9197</p>
+        <p>📍 R. das Cambevas, 241 - SP</p>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <a href="https://www.instagram.com/oxigym.matriz/" target="_blank">Instagram (@oxigym.matriz)</a>
+        <a href="https://www.facebook.com/pages/Oxigym-Matriz/458398460925608" target="_blank">Facebook Oficial</a>
+        <a href="https://gatame.com.br" target="_blank">Site do Morganti Ju-Jitsu</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Oxigym Matriz. Todos os direitos reservados. Sede Mundial do Morganti Ju-Jitsu.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/5511983339197?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20aulas%20e%20planos." class="float-wa" target="_blank" aria-label="Contato via WhatsApp">
+    💬
+    <span class="float-wa-badge">1</span>
+  </a>
+
+  <!-- SCRIPT VERIFICADOR DE STATUS DE FUNCIONAMENTO -->
+  <script>
+    function updateOpenStatus() {
+      const now = new Date();
+      const day = now.getDay(); // 0: Dom, 1: Seg ... 6: Sab
+      const hour = now.getHours();
+      const minute = now.getMinutes();
+      const currentTime = hour * 60 + minute;
+
+      const badge = document.getElementById('openStatus');
+      let isOpen = false;
+
+      if (day >= 1 && day <= 5) {
+        // Segunda a Sexta: 06:00 (360) as 22:00 (1320)
+        if (currentTime >= 360 && currentTime < 1320) isOpen = true;
+      } else if (day === 6) {
+        // Sabado: 08:00 (480) as 12:00 (720)
+        if (currentTime >= 480 && currentTime < 720) isOpen = true;
+      }
+
+      if (isOpen) {
+        badge.textContent = "🟢 ABERTO AGORA — Venha Conhecer!";
+        badge.className = "status-badge status-open";
+      } else {
+        badge.textContent = "🔴 FECHADO AGORA — Confira nossos horários abaixo";
+        badge.className = "status-badge status-closed";
+      }
+    }
+    updateOpenStatus();
+  </script>
+</body>
+</html>
